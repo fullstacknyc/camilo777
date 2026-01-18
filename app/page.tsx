@@ -76,7 +76,7 @@ export default function Home() {
           <TypewriterText names={names} />
         </h1>
         <p className="mt-4 text-lg text-gray-400">
-          Book a meeting <a href="#">here</a>.
+          Free consultation <a href="mailto:c6m1lo@proton.me">here</a>.
         </p>
       </div>
     </div>
