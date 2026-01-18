@@ -41,7 +41,7 @@ export default function RootLayout({
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-8">
-                  <Link href="/Resume.pdf" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+                  <Link href="./Camilo_Resume_Updated.pdf" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
                     Resume
                   </Link>
                   <Link href="https://github.com/fullstacknyc?tab=repositories" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
