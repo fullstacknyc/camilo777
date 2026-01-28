@@ -13,7 +13,7 @@ const ProjectsPage = () => {
         </li>
         <li>
           <h2 className="text-xl font-semibold">Project Two</h2>
-          <p>Productivity Machine</p>
+          <p>Productivity App</p>
         </li>
         <li>
           <h2 className="text-xl font-semibold">Project Three</h2>
