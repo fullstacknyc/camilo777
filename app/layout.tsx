@@ -21,12 +21,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-const footer = () => {
-  
-}
-  const toggleMobileMenu = () => {
+const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
   return (
@@ -50,11 +47,8 @@ const footer = () => {
                   <Link href="/projects" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
                     Projects
                   </Link>
-                  <Link href="https://buy.stripe.com/7sYbJ1aEBdEw6dRfKv9oc08" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+                  <Link href="https://buy.stripe.com/dRm8wPh2Z2ZS1XB2XJ9oc09" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
                     Donate
-                  </Link>
-                  <Link href="/privacy" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
-                    Privacy
                   </Link>
                 </div>
               </div>
@@ -110,6 +104,22 @@ const footer = () => {
         <main className="min-h-screen">
           {children}
         </main>
+        <footer className="bg-black border-t border-gray-800 mt-10">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <p className="text-center text-gray-400 text-sm">
+              &copy; {new Date().getFullYear()} Camilo777. All rights reserved.
+            </p>
+            <Link href="/privacy" className="text-gray-400 hover:text-gray-200 text-sm block text-center mt-2">
+              Privacy Policy
+            </Link>
+            <Link href="/support" className="text-gray-400 hover:text-gray-200 text-sm block text-center mt-1">
+              Support
+            </Link>
+            <Link href="/tos" className="text-gray-400 hover:text-gray-200 text-sm block text-center mt-1">
+              Terms of Service
+            </Link>
+          </div>
+        </footer>
       </body>
     </html>
   );
