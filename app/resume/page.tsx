@@ -8,13 +8,17 @@ const ResumePage = () => {
             <h1 className="text-3xl font-bold mb-6">Resume</h1>
             {/* List showing polymath skills */}
             <ul className="list-disc list-inside space-y-2 list-none">
-                <li><strong>Skill 1:</strong> Full-Stack Web Development</li>
-                <li><strong>Skill 2:</strong> Machine Learning & AI</li>
-                <li><strong>Skill 3:</strong> Mobile App Development</li>
-                <li><strong>Skill 4:</strong> Cloud Computing & DevOps</li>
-                <li><strong>Skill 5:</strong> Data Science & Analytics</li>
-                <li><strong>Skill 6:</strong> Cybersecurity</li>
-                <li><strong>Skill 7:</strong> UI/UX Design</li>
+                <li>Juan Gomez</li>
+                <li>Manhattan, 10012</li>
+                <li><a href="mailto:c6m1lo@proton.me">c6m1lo@proton.me</a></li>
+                <li><a href="https://www.linkedin.com/in/camilogomezvalencia/">LinkedIn</a></li>
+                <li>ATC Transcriptionist - Alignerr</li>
+                <li>Spanish Medical Annotation- Centific</li>
+                <li>Certified Medical Interpreter - Propio</li>
+                <li>Native Spanish/English</li>
+                <li>New Jersey Institute Of Technology</li>
+                <li>Hudson County Community College</li>
+                <li>North Bergen High School</li>
             </ul>
         </div>
     )
