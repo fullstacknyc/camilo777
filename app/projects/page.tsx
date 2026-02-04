@@ -9,7 +9,9 @@ const ProjectsPage = () => {
       <h1 className="text-3xl font-bold mb-6">Projects</h1>
       <ul className="list-disc list-inside space-y-2 list-none">
         <li><a href="https://www.camilo777.com">Camilo777</a></li>
-        <li></li>
+        <li>Note App</li>
+        <li>Diet Generator</li>
+        <li>Workout Generator</li>
       </ul>
     </div>
   )
