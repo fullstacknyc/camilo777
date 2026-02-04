@@ -13,7 +13,6 @@ const ProjectsPage = () => {
         <li><a href="/diet">Diet Generator</a></li>
         <li><a href="/workout">Workout Generator</a></li>
         <li><a href="/scheduler">Scheduler App</a></li>
-        <li></li>
       </ul>
     </div>
   )
