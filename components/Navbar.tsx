@@ -22,9 +22,6 @@ export default function Navbar() {
             <Link href="/resume" className="text-gray-400 hover:text-gray-200 text-sm">
               Resume
             </Link>
-            <Link href="/scheduler" className="text-gray-400 hover:text-gray-200 text-sm">
-              Scheduler
-            </Link>
           </div>
         </div>
       </div>
