@@ -8,7 +8,7 @@ const ProjectsPage = () => {
       <ul className="list-disc list-inside space-y-2 text-center ">
         <li><a href="https://www.camilo777.com">Camilo777</a></li>
         <li><a href="/scheduler">Scheduler App (WIP)</a></li>
-        <li><a href="https://soundcloud.com/cyamilo/sets/milo-wrld">Milo Wrld SoundCloud</a></li>
+        <li><a href="https://soundcloud.com/cyamilo/sets/milo-wrld" target="_blank">Milo Wrld SoundCloud</a></li>
         <li>Cross-Domain Mastery App (TBA)</li>
       </ul>
     </div>
