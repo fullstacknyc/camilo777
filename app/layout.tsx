@@ -16,11 +16,23 @@ const headingFont = Lora({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.camilo777.com"),
   title: {
     default: "Camilo Gomez | Portfolio",
     template: "%s | Camilo Gomez",
   },
   description: "Personal site and portfolio for Camilo Gomez.",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
   icons: {
     icon: "/favicon.ico",
   },
