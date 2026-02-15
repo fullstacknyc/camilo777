@@ -28,8 +28,7 @@ export default function ReferralPage() {
         <span className="kicker">Referrals</span>
         <h1 className="mt-5 text-4xl font-semibold sm:text-5xl">Referral Programs</h1>
         <p className="muted mt-4 max-w-2xl">
-          External links are listed here for convenience. Please review each provider&apos;s terms
-          before using any offer.
+          Exceptional referral programs that I am currently utilizing and recommend for their value and reliability. By using these referral links, you can access high-quality services while also supporting my ongoing projects and initiatives.
         </p>
         <div className="mt-8 space-y-4">
           {referrals.map((item) => (
