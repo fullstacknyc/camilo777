@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Lora } from "next/font/google";
 
 import Navbar from "@/components/Navbar";
+import Adsense
+ from "@/components/adsense";
 import "./globals.css";
 import Script from "next/script";
 
@@ -33,6 +35,7 @@ export const metadata: Metadata = {
   ],
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -41,13 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <Script
-          id="adsense-loader"
-          async
-          strategy="afterInteractive"
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9659879669905345`}
-          crossOrigin="anonymous"
-        />
+        <Adsense pId="ca-pub-9659879669905345"></Adsense>
       </head>
       <body className={`${bodyFont.variable} ${headingFont.variable} antialiased`}>
         <Navbar />
