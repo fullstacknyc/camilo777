@@ -3,7 +3,7 @@ import { Plus_Jakarta_Sans, Lora } from "next/font/google";
 import "./globals.css";
 
 import Navbar from "@/components/Navbar";
-import Adsense from "@/components/AdSense";
+import AdSense from "@/components/adsense";
 
 const bodyFont = Plus_Jakarta_Sans({
   variable: "--font-body",
@@ -42,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <Adsense pId="ca-pub-9659879669905345"></Adsense>
+        <AdSense pId="ca-pub-9659879669905345"></AdSense>
       </head>
       <body className={`${bodyFont.variable} ${headingFont.variable} antialiased`}>
         <Navbar />
