@@ -11,9 +11,9 @@ const experience = [
 ];
 
 const education = [
-  "New Jersey City University",
-  "Hudson County Community College",
-  "North Bergen High School",
+  "New Jersey City University, Bachelor of Science in Computer Science (In Progress)",
+  "Hudson County Community College, Associate of Science in Computer Science, Phi Theta Kappa Honor Society",
+  "North Bergen High School, Spanish Honors",
 ];
 
 export default function ResumePage() {
