@@ -1,26 +1,37 @@
-"use client";
+export default function PrivacyPage() {
+  return (
+    <div className="page-wrap">
+      <section className="panel p-8 sm:p-10">
+        <span className="kicker">Legal</span>
+        <h1 className="mt-5 text-4xl font-semibold sm:text-5xl">Privacy Policy</h1>
+        <p className="muted mt-4">Last updated: February 15, 2026</p>
 
-import { useState, useEffect } from 'react';
+        <div className="mt-8 space-y-5">
+          <article className="info-card">
+            <h2 className="text-xl font-semibold">Information Collection</h2>
+            <p className="muted mt-2">
+              This website does not collect personal account data, analytics profiles, or marketing
+              identifiers.
+            </p>
+          </article>
 
-const PrivacyPage = () => {
-    return (
-        <div className="max-w-3xl mx-auto p-4 mt-20">
-            <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
-            <p>Your privacy is important to us. This privacy policy explains how we collect, use, and protect your personal information when you use our website.</p>
-            <h2 className="text-2xl font-semibold mt-6 mb-4">Information We Collect</h2>
-            <ul className="list-disc list-inside space-y-2">
-                <li><strong>None.</strong></li>
-            </ul>
-            <h2 className="text-2xl font-semibold mt-6 mb-4">How We Use Your Information</h2>
-            <p>We do not collect any personal information from our users. Therefore, we do not use or share any personal information.</p>
-            <h2 className="text-2xl font-semibold mt-6 mb-4">Data Security</h2>
-            <p>We take appropriate measures to protect your information. However, since we do not collect any personal information, there is no data to protect.</p>
-            <h2 className="text-2xl font-semibold mt-6 mb-4">Changes to This Privacy Policy</h2>
-            <p>We may update this privacy policy from time to time. Any changes will be posted on this page, and we encourage you to review it periodically.</p>
-            <h2 className="text-2xl font-semibold mt-6 mb-4">Contact Us</h2>
-            <p>If you have any questions or concerns about this privacy policy, please contact us at <a href="mailto:c6m1lo@proton.me" className="text-blue-400 hover:text-blue-300">c6m1lo@proton.me</a></p>
+          <article className="info-card">
+            <h2 className="text-xl font-semibold">How Information Is Used</h2>
+            <p className="muted mt-2">
+              Since personal data is not intentionally collected, no personal information is sold,
+              shared, or used for advertising.
+            </p>
+          </article>
+
+          <article className="info-card">
+            <h2 className="text-xl font-semibold">Contact</h2>
+            <p className="muted mt-2">Questions about this policy can be sent to:</p>
+            <a className="primary-link mt-2" href="mailto:c6m1lo@proton.me">
+              c6m1lo@proton.me
+            </a>
+          </article>
         </div>
-    )
+      </section>
+    </div>
+  );
 }
-
-export default PrivacyPage;

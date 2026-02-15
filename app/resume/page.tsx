@@ -1,26 +1,70 @@
-"use client";
+const experience = [
+  "Transcriptionist, Uber AI Solutions",
+  "Air Traffic Control Domain Specialist, Alignerr",
+  "Transcription, Annotation, and Summarization, Centific",
+  "Certified Medical Interpreter, Propio",
+];
 
-const ResumePage = () => {
-    return (
-        <div className="max-w-3xl mx-auto p-4 mt-20">
-            <h1 className="text-3xl font-bold mb-6">Resume</h1>
-            {/* List showing polymath skills */}
-            <ul className="list-disc list-inside space-y-2">
-                <li>Juan Gomez</li>
-                <li>Manhattan, 10012</li>
-                <li><a href="mailto:c6m1lo@proton.me">c6m1lo@proton.me</a></li>
-                <li><a href="https://www.linkedin.com/in/camilogomezvalencia/">LinkedIn</a></li>
-                <li>Transcriptionist - Uber AI Solutions</li>
-                <li>Air Traffic Control - Alignerr</li>
-                <li>Transcription, Annotation, Summarization, NLP- Centific</li>
-                <li>Certified Medical Interpreter - Propio</li>
-                <li>Native Spanish/English</li>
-                <li>New Jersey City University</li>
-                <li>Hudson County Community College</li>
-                <li>North Bergen High School</li>
+const education = [
+  "New Jersey City University",
+  "Hudson County Community College",
+  "North Bergen High School",
+];
+
+export default function ResumePage() {
+  return (
+    <div className="page-wrap">
+      <section className="panel p-8 sm:p-10">
+        <span className="kicker">Resume</span>
+        <h1 className="mt-5 text-4xl font-semibold sm:text-5xl">Professional Snapshot</h1>
+
+        <div className="mt-8 grid gap-6 sm:grid-cols-2">
+          <article className="info-card">
+            <h2 className="text-xl font-semibold">Contact</h2>
+            <p className="muted mt-2">Camilo Gomez</p>
+            <p className="muted">Manhattan, NY 10012</p>
+            <a className="primary-link mt-3" href="mailto:c6m1lo@proton.me">
+              c6m1lo@proton.me
+            </a>
+            <a
+              className="primary-link mt-2"
+              href="https://www.linkedin.com/in/camilogomezvalencia/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn Profile →
+            </a>
+          </article>
+
+          <article className="info-card">
+            <h2 className="text-xl font-semibold">Skills</h2>
+            <ul className="muted mt-2 space-y-1">
+              <li>English and Spanish (native fluency)</li>
+              <li>Data annotation and transcription quality control</li>
+              <li>Medical interpretation and terminology handling</li>
+              <li>NLP-focused review and summarization workflows</li>
             </ul>
+          </article>
         </div>
-    )
-}
 
-export default ResumePage;
+        <section className="mt-6 info-card">
+          <h2 className="text-xl font-semibold">Experience</h2>
+          <ul className="muted mt-2 space-y-1">
+            {experience.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="mt-4 info-card">
+          <h2 className="text-xl font-semibold">Education</h2>
+          <ul className="muted mt-2 space-y-1">
+            {education.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </section>
+      </section>
+    </div>
+  );
+}

@@ -1,18 +1,28 @@
-"use client"
-
-const homepage = () => {
+export default function HomePage() {
   return (
-    // Dictionary style display of autodidact
-    <div className="max-w-3xl mx-auto p-4 mt-20">
-      <h2>autodidact /ô″tō-dī′dăkt″/</h2>
-      <p>noun</p>
-      <p>1. A self-taught person</p>
-      <p>2. One who is self-taught; an automath.</p>
-      <p>3. A self-taught person; an automath.</p>
-      <p>4. A person who has taught himself.</p>
-      <p><em>The American Heritage® Dictionary of the English Language, 5th Edition • More at Wordnik</em></p>
+    <div className="page-wrap">
+      <section className="panel p-8 sm:p-10">
+        <span className="kicker">Portfolio</span>
+        <h1 className="mt-5 text-4xl font-semibold sm:text-5xl">Camilo Gomez</h1>
+        <p className="muted mt-4 max-w-2xl text-lg">
+          Detail-oriented language and AI operations professional focused on annotation quality,
+          multilingual communication, and practical automation workflows.
+        </p>
+        <div className="mt-8 grid-cards">
+          <article className="info-card">
+            <h2 className="text-xl font-semibold">Core Strengths</h2>
+            <p className="muted mt-2">NLP data labeling, medical interpretation, and structured QA.</p>
+          </article>
+          <article className="info-card">
+            <h2 className="text-xl font-semibold">Work Approach</h2>
+            <p className="muted mt-2">Reliable execution, clean communication, and measurable outcomes.</p>
+          </article>
+          <article className="info-card">
+            <h2 className="text-xl font-semibold">Current Focus</h2>
+            <p className="muted mt-2">Building a polished portfolio and maintaining a clear professional profile.</p>
+          </article>
+        </div>
+      </section>
     </div>
-  )
+  );
 }
-
-export default homepage;

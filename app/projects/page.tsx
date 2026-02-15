@@ -1,17 +1,50 @@
-"use client"
+const projects = [
+  {
+    title: "LinkedIn Profile",
+    description: "Professional background, recent roles, and endorsements.",
+    href: "https://www.linkedin.com/in/camilogomezvalencia",
+    cta: "View profile",
+  },
+  {
+    title: "Personal Website",
+    description: "Public portfolio and contact information.",
+    href: "https://www.camilo777.com",
+    cta: "Open site",
+  },
+  {
+    title: "Referral Resources",
+    description: "A curated list of referral links and programs.",
+    href: "/referral",
+    cta: "Open page",
+  },
+];
 
-const ProjectsPage = () => {
+export default function ProjectsPage() {
   return (
-    // Tik Tok Style display of projects
-    <div className="max-w-3xl mx-auto p-4 mt-20">
-      <h1 className="text-3xl font-bold mb-6 text-center">Projects</h1>
-      <ul className="list-disc list-inside space-y-2 text-center ">
-        <li><a href="https://www.linkedin.com/in/camilogomezvalencia" target="_blank">LinkedIn</a></li>
-        <li><a href="https://www.camilo777.com">Camilo777</a></li>
-        <li><a href="/referral">Referral Page</a></li>
-      </ul>
+    <div className="page-wrap">
+      <section className="panel p-8 sm:p-10">
+        <span className="kicker">Projects</span>
+        <h1 className="mt-5 text-4xl font-semibold sm:text-5xl">Selected Links</h1>
+        <p className="muted mt-4 max-w-2xl">
+          A quick index of public-facing links that represent current work and profile details.
+        </p>
+        <div className="mt-8 grid-cards">
+          {projects.map((project) => (
+            <article key={project.title} className="info-card">
+              <h2 className="text-xl font-semibold">{project.title}</h2>
+              <p className="muted mt-2">{project.description}</p>
+              <a
+                className="primary-link mt-4"
+                href={project.href}
+                target={project.href.startsWith("http") ? "_blank" : undefined}
+                rel={project.href.startsWith("http") ? "noreferrer" : undefined}
+              >
+                {project.cta} →
+              </a>
+            </article>
+          ))}
+        </div>
+      </section>
     </div>
-  )
+  );
 }
-
-export default ProjectsPage;
