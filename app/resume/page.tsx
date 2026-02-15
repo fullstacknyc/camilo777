@@ -10,9 +10,9 @@ const ResumePage = () => {
                 <li>Manhattan, 10012</li>
                 <li><a href="mailto:c6m1lo@proton.me">c6m1lo@proton.me</a></li>
                 <li><a href="https://www.linkedin.com/in/camilogomezvalencia/">LinkedIn</a></li>
-                <li>Uber AI Solutions - Bilingual AI Trainer</li>
-                <li>ATC Transcriptionist - Alignerr</li>
-                <li>Spanish Medical Annotation- Centific</li>
+                <li>Transcriptionist - Uber AI Solutions</li>
+                <li>Air Traffic Control - Alignerr</li>
+                <li>Transcription, Annotation, Summarization, NLP- Centific</li>
                 <li>Certified Medical Interpreter - Propio</li>
                 <li>Native Spanish/English</li>
                 <li>New Jersey City University</li>
