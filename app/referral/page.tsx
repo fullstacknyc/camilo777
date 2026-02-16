@@ -1,23 +1,13 @@
 const referrals = [
   {
-    name: "GoMining",
-    href: "https://gomining.com/?ref=BM4W812",
-    description: "Cloud mining platform referral link.",
-  },
-  {
-    name: "TrustDice Faucet",
-    href: "https://trustdice.win/faucet/?ref=u_camgoat",
-    description: "Crypto faucet referral link.",
-  },
-  {
-    name: "Coinbase",
-    href: "https://coinbase.com/join/ZXD8P8E?src=referral-link",
-    description: "Exchange referral program link.",
-  },
-  {
     name: "Chime",
     href: "https://www.chime.com/r/juangomez1463/?c=s",
     description: "Chime credit builder referral program link.",
+  },
+  {
+    name: "GoMining",
+    href: "https://gomining.com/?ref=BM4W812",
+    description: "Cloud mining platform referral link.",
   }
 ];
 
