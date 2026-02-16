@@ -81,6 +81,9 @@ export default function RootLayout({
               <a className="transition hover:text-neutral-100" href="/tos">
                 Terms of Service
               </a>
+              <a className="transition hover:text-neutral-100" href="https://buy.stripe.com/dRm8wPh2Z2ZS1XB2XJ9oc09" target="_blank" rel="noreferrer">
+                Donate
+              </a>
             </div>
           </div>
         </footer>

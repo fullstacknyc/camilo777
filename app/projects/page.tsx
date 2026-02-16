@@ -1,11 +1,5 @@
 const projects = [
   {
-    title: "Stripe Donation",
-    description: "Donate any amount to support ongoing projects and site maintenance.",
-    href: "https://buy.stripe.com/dRm8wPh2Z2ZS1XB2XJ9oc09",
-    cta: "Donate",
-  },
-  {
     title: "Referral Resources",
     description: "A curated list of useful programs and resources that I personally recommend.",
     href: "/referral",
