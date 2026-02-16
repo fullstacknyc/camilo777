@@ -16,6 +16,12 @@ const projects = [
     description: "A simple Bible reading app built with React and Next.js.",
     href: "/bible",
     cta: "Open app",
+  },
+  {
+    title: "Journal App",
+    description: "Daily timestamped journaling with local-only storage, search, filters, and weekly metrics.",
+    href: "/journal",
+    cta: "Open app",
   }
 ];
 
