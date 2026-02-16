@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 
 type Verse = {
   number: number;
@@ -150,12 +150,15 @@ export default function BiblePage() {
     window.localStorage.setItem(`bible:selectedChapter:${bookId}`, String(chapter));
   };
 
-  const handleChapterChange = (chapter: number) => {
-    setSelectedChapter(chapter);
-    if (selectedBookId) {
-      window.localStorage.setItem(`bible:selectedChapter:${selectedBookId}`, String(chapter));
-    }
-  };
+  const handleChapterChange = useCallback(
+    (chapter: number) => {
+      setSelectedChapter(chapter);
+      if (selectedBookId) {
+        window.localStorage.setItem(`bible:selectedChapter:${selectedBookId}`, String(chapter));
+      }
+    },
+    [selectedBookId],
+  );
 
   const chapterCount = bookData?.chapters.length ?? 0;
   const canGoPrevious = selectedChapter > 1;
@@ -172,6 +175,35 @@ export default function BiblePage() {
     if (!canGoNext) return;
     handleChapterChange(selectedChapter + 1);
   };
+
+  useEffect(() => {
+    const onKeyDown = (event: KeyboardEvent) => {
+      const target = event.target as HTMLElement | null;
+      const tagName = target?.tagName;
+      const isTypingContext =
+        tagName === "INPUT" ||
+        tagName === "TEXTAREA" ||
+        tagName === "SELECT" ||
+        target?.isContentEditable;
+
+      if (isTypingContext || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) {
+        return;
+      }
+
+      if (event.key === "ArrowLeft" && canGoPrevious) {
+        event.preventDefault();
+        handleChapterChange(selectedChapter - 1);
+      }
+
+      if (event.key === "ArrowRight" && canGoNext) {
+        event.preventDefault();
+        handleChapterChange(selectedChapter + 1);
+      }
+    };
+
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [canGoNext, canGoPrevious, handleChapterChange, selectedChapter]);
 
   return (
     <div className="page-wrap space-y-6">
