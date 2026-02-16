@@ -188,7 +188,7 @@ export default function JournalPage() {
     const url = URL.createObjectURL(blob);
     const anchor = document.createElement("a");
     anchor.href = url;
-    anchor.download = `camilo777-journal-${new Date().toISOString().slice(0, 10)}.json`;
+    anchor.download = `journal-${new Date().toISOString().slice(0, 10)}.json`;
     anchor.click();
     URL.revokeObjectURL(url);
   };
@@ -235,7 +235,7 @@ export default function JournalPage() {
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div>
             <span className="kicker">Journal</span>
-            <h1 className="mt-4 text-3xl font-semibold sm:text-4xl">Second Brain Journal</h1>
+            <h1 className="mt-4 text-3xl font-semibold sm:text-4xl">Journal App</h1>
             <p className="muted mt-3 max-w-3xl text-sm sm:text-base">
               Log-first daily journal for reflection and behavior tracking. Entirely local in this MVP.
             </p>
