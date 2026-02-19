@@ -13,7 +13,7 @@ const bodyFont = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.c6m1lo.com"),
   title: {
-    default: "Camilo777",
+    default: "c6m1lo",
     template: "%s | Camilo Gomez",
   },
   description: "Portfolio and personal website of my projects, skills, and experience.",
